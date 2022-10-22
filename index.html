@@ -1,0 +1,362 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tajam</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <a name="home"></a>
+    <header>
+        <div class="container">
+            <div class="site-header" >
+                <div class="logo">
+                    <img src="details/favicon.png" alt="Tajam" class="logo-img">
+                    <span class="logo-text">tajam</span>
+                </div>
+                <nav class="navbar">
+                    <a href="#home" class="navbar-item active">Home</a>
+                    <a href="#about" class="navbar-item">About</a>
+                    <a href="#expertise" class="navbar-item">Expertise</a>
+                    <a href="#team" class="navbar-item">Team</a>
+                    <a href="#works" class="navbar-item">Works</a>
+                    <a href="#people-say" class="navbar-item">People Say</a>
+                    <a href="#contact" class="navbar-item">Contact</a>
+                </nav>
+            </div>
+            <!-- /.site-header -->
+            <div class="site-content">
+                <h1 class="site-title ">We Are Awesome Creative Agency</h1>
+                <hr class="tile-line " noshade color="#00e0d0" width="70px" size="1">
+                <p class="site-text " >
+                    This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. 
+                    Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis 
+                    sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. 
+                    Morbi accumsan ipsum velit.
+                </p>
+                <a href="#learn" class="site-btn wow fadeInLeft" >Learn More</a>
+            </div>
+            <!-- /.site-header-content -->
+        </div>
+    </header>
+
+    <a name="about"></a>
+    <main>
+        <div class="container">
+            <section class="story">
+                <img src="details/column.png" alt="Logo" class="big-logo">
+                <div class="story-block">
+                    <h2 class="story-title title">OUR STORY</h2>
+                    <p class="story-text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit 
+                        auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, 
+                        nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus
+                        </br>
+                        </br>
+                        Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  
+                        mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent
+                        per conubia nostra, per inceptos himenaeos.
+                    </p>
+                    <a href="#" class="site-btn">Learn More</a>
+                 </div>
+            </section>
+            <!-- /.story -->
+        </div>
+        <!-- /.container -->
+        <div class="story-video">
+            <div class="container">
+                <div class="video-block">
+                    <img src="details/play.png" alt="Play Video" class="play-img" onclick="playVideo('MyVideo.mp4')">
+                        
+                    <div class="video-text">WATCH OUR STORY</div>
+                </div>
+            </div>
+             <!-- /.container -->
+        </div>
+        <!-- /.story-video -->
+        <div class="video-player" id="videoPlayer">
+            <video width ="100%" controls autoplay id="myVideo">
+                <source src="MyVideo.mp4" type="video/mp4">
+            </video>
+            <img src="details/exit.png" class="close-btn" onclick="stopVideo()">
+        </div>
+
+        <script>
+            var videoPlayer = document.getElementById("videoPlayer");
+            var myVideo=document.getElementById("myVideo");
+
+            function stopVideo(){
+                videoPlayer.style.display="none";
+            }
+            function playVideo(file){
+                myVideo.src=file;
+                videoPlayer.style.display="block";
+            }
+        </script>
+
+        <a name="expertise"></a>
+        <div class="container">
+            <section class="expertise">
+                <h2 class="expertise-title title">Expertise</h2>
+                <p class="expertise-desc">Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
+                <hr class="expertise-title-line" noshade color="#c6c4c9" width="50px" size="2">
+                <div class="features">
+                    <div class="features-item">
+                        <img src="details/computer.png" alt="WEB DESIGN & DEVELOPMENT" class="features-img">
+                        <h3 class="features-title">WEB DESIGN & DEVELOPMENT</h3>
+                        <p class="features-text">This is Photoshop's version  of Lorem Ipsum. 
+                            Proin gravida nibh vel velit auctor aliquet Aenean.
+                        </p>
+                    </div>
+                    <div class="features-item">
+                        <img src="details/brush.png" alt="BRANDING IDENTITY" class="features-img">
+                        <h3 class="features-title">BRANDING IDENTITY</h3>
+                        <p class="features-text">This is Photoshop's version  of Lorem Ipsum. 
+                            Proin gravida nibh vel velit auctor aliquet Aenean.
+                        </p>
+                    </div>
+                    <div class="features-item">
+                        <img src="details/mobilephone.png" alt="MOBILE APP" class="features-img">
+                        <h3 class="features-title">MOBILE APP</h3>
+                        <p class="features-text">This is Photoshop's version  of Lorem Ipsum. 
+                            Proin gravida nibh vel velit auctor aliquet Aenean.
+                        </p>
+                    </div>
+                    <div class="features-item">
+                        <img src="details/engine.png" alt="SEARCH ENGINE OPTIMIZATION" class="features-img">
+                        <h3 class="features-title">SEARCH ENGINE OPTIMIZATION</h3>
+                        <p class="features-text">This is Photoshop's version  of Lorem Ipsum. 
+                            Proin gravida nibh vel velit auctor aliquet Aenean.
+                        </p>
+                    </div>
+                    <div class="features-item">
+                        <img src="details/games.png" alt="GAME DEVELOPMENT" class="features-img">
+                        <h3 class="features-title">GAME DEVELOPMENT</h3>
+                        <p class="features-text">This is Photoshop's version  of Lorem Ipsum. 
+                            Proin gravida nibh vel velit auctor aliquet Aenean.
+                        </p>
+                    </div>
+                    <div class="features-item">
+                        <img src="details/heart.png" alt="MADE WITH LOVE" class="features-img">
+                        <h3 class="features-title">MADE WITH LOVE</h3>
+                        <p class="features-text">This is Photoshop's version  of Lorem Ipsum. 
+                            Proin gravida nibh vel velit auctor aliquet Aenean.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- /.expertise --> 
+        </div>
+        <!-- /.container -->
+
+        <!-- /.container -->
+        <a name="team"></a>
+        <section class="team">
+            <div class="container">
+                <h2 class="team-section-title title">MEET OUR AMAZING TEAM</h2>
+                <p class="team-desc">Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
+                <hr class="team-title-line" noshade color="#c6c4c9" width="50px" size="2">
+                <div class="team-block">
+                    <div class="team-item">
+                        <div class="team-card">
+                            <img src="workers/secondworker.jpg" alt="Team Member" class="team-img">
+                            <h3 class="team-title">Matt Watson</h3>
+                            <p class="team-text">CEO & FOUNDER</p>
+                        </div>
+                    </div>
+                    <div class="team-item">
+                        <div class="team-card">
+                            <img src="workers/thirdworker.jpg" alt="Team Member" class="team-img">
+                            <h3 class="team-title">Denise Donovan</h3>
+                            <p class="team-text">ENGINEERING</p>
+                        </div>
+                    </div>
+                    <div class="team-item">
+                        <div class="team-card">
+                            <img src="workers/forthworker.jpg" alt="Team Member" class="team-img">
+                            <h3 class="team-title">Evan Adams</h3>
+                            <p class="team-text">DESIGNER</p>
+                        </div>
+                    </div>
+                    <div class="team-item">
+                        <div class="team-card">
+                            <img src="workers/firstworker.webp" alt="Team Member" class="team-img">
+                            <h3 class="team-title">Dixie Thompson</h3>
+                            <p class="team-text">MARKETING</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.team-block -->
+                <div class="team-invite">
+                    <p class="team-join">Become part of our dream team, let’s join us !</p>
+                    <a href="#" class="site-btn">WE ARE HIRING</a>
+                </div>
+                <!-- /.team-invite -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.team -->
+
+
+        
+        <a name="works"></a>
+        <section class="works">
+            <div class="container works-about">
+                <h2 class="title">OUR WORKS</h2>
+                <a href="#" class="works-link">See All Project in dribbble </a>
+            </div>
+            <!-- /.container -->
+            <div class="works-block">
+                <img src="works/building1.jpg" alt="Work Image" class="works-item">
+                <img src="works/building2.jpg" alt="Work Image" class="works-item">
+                <img src="works/building3.jpg" alt="Work Image" class="works-item">
+                <img src="works/building4.jpg" alt="Work Image" class="works-item">
+                <img src="works/building5.jpg" alt="Work Image" class="works-item">
+                <img src="works/building6.jpg" alt="Work Image" class="works-item">
+                <img src="works/building7.jpg" alt="Work Image" class="works-item">
+                <img src="works/building8.jfif" alt="Work Image" class="works-item">
+                <img src="works/building9.jpg" alt="Work Image" class="works-item">
+                <img src="works/building10.png" alt="Work Image" class="works-item">
+                <img src="works/building11.webp" alt="Work Image" class="works-item">
+                <img src="works/building12.webp" alt="Work Image" class="works-item">
+            </div>
+            <!-- /.works-block -->
+            <div class="container works-btn">
+                <a href="#" class="site-btn">Load More</a>
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.works -->
+
+
+        <a name="people-say"></a>
+        <section class="feedback">
+            <div class="container">
+                <!-- Slider main container -->
+                <div class="swiper-container feedback-block">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <h3 class="quote">“</h3>
+                            <p class="feedback-text">1 This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh 
+                                vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit 
+                                consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate 
+                                cursus a sit amet mauris. Morbi accumsan ipsum . Nam nec tellus a odio tincidunt 
+                                auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.
+                            </p>
+                            <h3 class="author">JANE GALADRIEL</h3>
+                            <h4 class="author-job">CEO TENGKUREP</h4>
+                        </div>
+                        <!--slide end-->
+                    </div>
+
+                </div>
+                <!-- /.swiper-container -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.feedback -->
+
+
+        <a name="contact"></a>
+        <div class="container">
+            <section class="contact">
+                <form action="mail.php" method="POST" class="contact-form">
+                    <div class="title contact-title">GIVE US A GOOD NEWS</div>
+                    <input type="text" class="contact-input" name="user_name" placeholder="Name">
+                    <input type="email" class="contact-input" name="user_email" placeholder="Email">
+                    <input type="text" class="contact-input" name="subject" placeholder="Subject">
+                    <input type="text" class="contact-input contact-message" name="message" placeholder="Your Message">
+                    <button type="submit" class="site-btn contact-btn">Submit</button>
+                </form>
+                <!-- /.contact-form -->
+                <div class="clients">
+                    <div class="title client-title">OUR HAPPY CLIENT</div>
+                    <div class="clients-block">
+                        <img src="logos/zara.png" alt="Client Image" class="client-img">
+                        <img src="logos/mango.png" alt="Client Image" class="client-img">
+                        <img src="logos/barneys.png" alt="Client Image" class="client-img">
+                        <img src="logos/gucci.png" alt="Client Image" class="client-img">
+                        <img src="logos/clavin.png" alt="Client Image" class="client-img">
+                        <img src="logos/nike.png" alt="Client Image" class="client-img">
+                        <img src="logos/covers.png" alt="Client Image" class="client-img">
+                        <img src="logos/puma.png" alt="Client Image" class="client-img">
+                        <img src="logos/levis.png" alt="Client Image" class="client-img">
+                        <img src="logos/billabong.png" alt="Client Image" class="client-img">
+                    </div>
+                </div>
+                <!-- /.clients -->
+            </section>
+            <!-- /.contact -->
+        </div>
+        <!-- /.container -->
+    </main>
+
+
+    <footer>
+        <div class="container">
+            <section class="footer">
+                <div class="footer-main">
+                    <div class="footer-about">
+                        <div class="logo">
+                            <img src="details/favicon.png" alt="Tajam" class="logo-img">
+                            <span class="logo-text">tajam</span>
+                        </div>
+                        <p class="about-text">
+                            lorem quis bibendum auctor, nisi elit consequat ipsum, nec 
+                            sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare 
+                            odio non mauris vitae erat in elit
+                        </p>
+                    </div>
+                    <!-- /.footer-about -->
+                    <div class="footer-address">
+                        <div class="footer-title">OUR STUDIO</div>
+                        <div class="address-item">
+                            <img src="details/map.png" alt="Location" class="address-img">
+                            <p class="address-text">Ruko cucruk, Jl. Radio luar dalem jos 
+                                No.12 - 13, Kalideres - Jakarta Barat
+                                11480 - Indonesia
+                            </p>
+                        </div>
+                        <div class="address-item">
+                            <img src="details/phone.png" alt="" class="address-img">
+                            <a href="tel:(+374) 55-11-22-33" class="phone-text">(+374) 55-11-22-33</a>
+                        </div>
+                    </div>
+                    <!-- /.footer-address -->
+                    <div class="footer-social">
+                        <div class="footer-title">STAY IN TOUCH</div>
+                        <div class="social-input">
+                            <input type="text" class="subscribe-input" placeholder="Subscribe our newsletter">
+                            <button class="subscribe-btn"></button>
+                        </div>
+                        <div class="socilal-links">
+                            <a href="https://www.facebook.com/" class="social-item"><img src="details/facebook.png" alt="Facebook"></a>
+                            <a href="https://twitter.com/" class="social-item"><img src="details/twitter.png" alt="Twitter"></a>
+                            <a href="https://dribbble.com/" class="social-item"><img src="details/dribbble.png" alt="Dribble"></a>
+                            <a href="https://www.instagram.com/" class="social-item"><img src="details/instagram.png" alt="Instagram"></a>
+                            <a href="https://www.google.com/" class="social-item"><img src="details/gplus.png" alt="G+"></a>
+                            <a href="https://www.youtube.com/" class="social-item"><img src="details/youtube.png" alt="YouTube"></a>
+                        </div>
+                    </div>
+                    <!-- /.footer-social -->
+                </div>
+                <!-- /.footer-main -->
+                <div class="footer-links">
+                    <a href="#" class="footer-link">HELP</a>
+                    <a href="#" class="footer-link">TERMS & CONDITION</a>
+                    <a href="#" class="footer-link">PRIVACY</a>
+                </div>
+                <div class="copyright">
+                    Copyright © 2015 - Tajem Creative
+                </div>
+            </section>
+            <!-- /.footer -->
+        </div>
+        <!-- /.container -->
+    </footer>
+   
+</body>
+</html>
